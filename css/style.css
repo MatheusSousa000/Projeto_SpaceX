@@ -1,19 +1,239 @@
-/* Error: Undefined variable.
- *    ,
- * 18 |   height: $height;
- *    |           ^^^^^^^
- *    '
- *   sass/pages/home.scss 18:11  main-content-styleds()
- *   sass/pages/home.scss 37:3   @import
- *   sass/style.scss 1:9         root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 18 \2502    height: $height;\a    \2502            ^^^^^^^\a    \2575 \a   sass/pages/home.scss 18:11  main-content-styleds()\a   sass/pages/home.scss 37:3   @import\a   sass/style.scss 1:9         root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
+#indicator {
+  background-color: #fff;
+  height: 0.35rem;
+  width: 0;
+  position: fixed;
+  top: 0;
+}
+
+#main-content {
+  background-image: url(../Imagens/home/01.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#main-content header {
+  color: #fff;
+  padding: 0;
+  background-color: transparent;
+}
+#main-content header #imgLogo {
+  height: 5rem;
+  max-width: 15rem;
+}
+#main-content header .img-fluid {
+  margin-right: 1rem;
+  max-width: 15rem;
+}
+#main-content header .navbar-toggler {
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+#main-content header .navbar-nav {
+  display: flex;
+  gap: 15px;
+}
+#main-content header .navBarBtn {
+  transition: 0.5s;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  margin-top: 0;
+  padding: 0;
+  color: #fff;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+#main-content header .link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+#main-content header .link::before,
+#main-content header .link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.35s;
+}
+#main-content header .link::before {
+  top: -5px;
+  transform-origin: left;
+}
+#main-content header .link::after {
+  bottom: -3px;
+  transform-origin: right;
+}
+#main-content header .link:hover::before,
+#main-content header .link:hover::after,
+#main-content header .active::before,
+#main-content header .active::after {
+  transform: scaleX(1);
+}
+#main-content #content {
+  cursor: default;
+  color: #fff;
+  margin: 11.5rem 0 0 2.3rem;
+}
+#main-content #content #mainBtn {
+  transition: 0.5s;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  padding: 1rem 2.2rem 1rem 2.2rem;
+}
+#main-content #arrowDown {
+  width: 6rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+#content-two {
+  background-image: url(../Imagens/home/03.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#content-two #contentTwo {
+  cursor: default;
+  padding: 11rem 0 0 2rem;
+  color: #fff;
+  max-width: 35rem;
+}
+#content-two #contentTwo #mainBtnTwo {
+  transition: 0.5s;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  padding: 1rem 2.2rem 1rem 2.2rem;
+}
+
+#content-third {
+  background-image: url(../Imagens/home/02.gif);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#content-third #contentThird {
+  cursor: default;
+  padding: 11rem 0 0 2rem;
+  color: #fff;
+  max-width: 35rem;
+}
+#content-third #contentThird #mainBtnThird {
+  transition: 0.5s;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  padding: 1rem 2.2rem 1rem 2.2rem;
+}
+
+#content-fourth {
+  background-image: url(../Imagens/home/04.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#content-fourth #contentFourth {
+  cursor: default;
+  padding: 11rem 0 0 2rem;
+  color: #fff;
+  max-width: 32rem;
+}
+#content-fourth #contentFourth #mainBtnFourth {
+  transition: 0.5s;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  padding: 1rem 2.2rem 1rem 2.2rem;
+}
+
+footer {
+  color: #fff;
+  cursor: default;
+  background-color: #000;
+  height: 6rem;
+  display: grid;
+  place-items: center;
+}
+footer #titleFooter {
+  font-weight: 600;
+  margin: 0;
+}
+footer #icons {
+  display: flex;
+  gap: 15px;
+}
+footer #icons .icon {
+  transition: 0.5s;
+}
+footer #icons .icon:hover {
+  scale: 1.2;
+}
+
+@media screen and (min-width: 1700px) and (max-width: 2560px) {
+  #main-content, #content-two, #content-third, #content-fourth {
+    height: 70rem;
+  }
+  #main-content header #imgLogo {
+    height: 10rem;
+    max-width: 30rem;
+  }
+  #main-content header .navBarBtn {
+    font-size: 1.5rem;
+  }
+  #mainContent h1 {
+    font-size: 4rem;
+    max-width: 50rem;
+  }
+  #mainContent h5 {
+    font-size: 2rem;
+  }
+  #mainBtn, #mainBtnTwo, #mainBtnThird, #mainBtnFourth {
+    font-size: 2rem;
+    border-radius: 0.4rem;
+  }
+  footer {
+    height: 100%;
+  }
+  footer #titleFooter {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  footer #icons .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media screen and (max-width: 385px) {
+  .img-fluid {
+    width: 11rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

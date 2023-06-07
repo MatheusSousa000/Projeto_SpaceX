@@ -15,7 +15,7 @@
 @mixin main-content-styleds($background-image, $background-size, $min-height) {
   background-image: $background-image;
   background-size: $background-size;
-  height: $height;
+  min-height: $min-height;
 }
 
 @mixin button-styleds($transition, $border, $text-transform, $margin-top, $padding) {
