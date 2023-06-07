@@ -467,6 +467,11 @@ footer #icons .icon:hover {
     height: 3rem;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #main-content, #content-two, #content-third, #content-fourth, #content-five {
+    background-attachment: none;
+  }
+}
 @media screen and (max-width: 750px) {
   #content-two #mainTitle {
     color: #fff;
