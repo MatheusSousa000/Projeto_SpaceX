@@ -17,7 +17,7 @@
   background-size: cover;
   background-attachment: fixed;
   height: 40rem;
-  background-position: cover;
+  background-position: right;
 }
 #main-content header {
   color: #fff;
@@ -110,6 +110,7 @@
   background-size: cover;
   background-attachment: fixed;
   height: 40rem;
+  background-position: center;
 }
 #content-two #contentTwo {
   cursor: default;
@@ -150,6 +151,7 @@
   background-size: cover;
   background-attachment: fixed;
   height: 40rem;
+  background-position: right;
 }
 #content-fourth #contentFourth {
   cursor: default;
