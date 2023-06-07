@@ -17,6 +17,7 @@
   background-size: cover;
   background-attachment: fixed;
   height: 40rem;
+  background-position: cover;
 }
 #main-content header {
   color: #fff;

@@ -36,6 +36,7 @@
 
 #main-content {
   @include main-content-styleds(url(../Imagens/home/01.jpg), cover, fixed, 40rem);
+  background-position: cover;
 
   header {
     color: #fff;
