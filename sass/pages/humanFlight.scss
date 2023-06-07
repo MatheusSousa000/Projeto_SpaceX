@@ -12,9 +12,8 @@
   top: 0;
 }
 
-@mixin imgs-styleds($background-image, $background-attachment, $background-size, $height) {
+@mixin imgs-styleds($background-image, $background-size, $height) {
   background-image: $background-image;
-  background-attachment: $background-attachment;
   background-size: $background-size;
   height: $height;
 }
@@ -32,7 +31,7 @@
 }
 
 #main-content {
-  @include imgs-styleds(url(../Imagens/humanFlight/01.jpg), fixed, cover, 40rem);
+  @include imgs-styleds(url(../Imagens/humanFlight/01.jpg), cover, 40rem);
   background-size: 100% 100%;
 
   header {
@@ -134,7 +133,7 @@
 }
 
 #content-two {
-  @include imgs-styleds(url(../Imagens/humanFlight/02.jpg), none, cover, 40rem);
+  @include imgs-styleds(url(../Imagens/humanFlight/02.jpg), cover, 40rem);
   background-size: 100% 100%;
 
   #paragraph {
@@ -165,7 +164,7 @@
 }
 
 #content-third {
-  @include imgs-styleds(url(../Imagens/humanFlight/03.jpg), none, cover, 40rem);
+  @include imgs-styleds(url(../Imagens/humanFlight/03.jpg), cover, 40rem);
   background-size: 100% 100%;
 
   #contentThird {
@@ -186,7 +185,7 @@
 }
 
 #content-fourth {
-  @include imgs-styleds(url(../Imagens/humanFlight/04.jpg), none, cover, 40rem);
+  @include imgs-styleds(url(../Imagens/humanFlight/04.jpg), cover, 40rem);
   background-size: 100% 100%;
 
   #contentFourth {
@@ -206,7 +205,7 @@
 }
 
 #content-five {
-  @include imgs-styleds(url(../Imagens/humanFlight/05.jpg), none, cover, 40rem);
+  @include imgs-styleds(url(../Imagens/humanFlight/05.jpg), cover, 40rem);
   background-size: 100% 100%;
 
   #contentFive {

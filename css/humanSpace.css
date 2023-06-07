@@ -14,7 +14,6 @@
 
 #main-content {
   background-image: url(../Imagens/humanFlight/01.jpg);
-  background-attachment: fixed;
   background-size: cover;
   height: 40rem;
   background-size: 100% 100%;
@@ -111,7 +110,6 @@
 
 #content-two {
   background-image: url(../Imagens/humanFlight/02.jpg);
-  background-attachment: none;
   background-size: cover;
   height: 40rem;
   background-size: 100% 100%;
@@ -143,7 +141,6 @@
 
 #content-third {
   background-image: url(../Imagens/humanFlight/03.jpg);
-  background-attachment: none;
   background-size: cover;
   height: 40rem;
   background-size: 100% 100%;
@@ -168,7 +165,6 @@
 
 #content-fourth {
   background-image: url(../Imagens/humanFlight/04.jpg);
-  background-attachment: none;
   background-size: cover;
   height: 40rem;
   background-size: 100% 100%;
@@ -192,7 +188,6 @@
 
 #content-five {
   background-image: url(../Imagens/humanFlight/05.jpg);
-  background-attachment: none;
   background-size: cover;
   height: 40rem;
   background-size: 100% 100%;

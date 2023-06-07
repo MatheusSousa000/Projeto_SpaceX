@@ -4,10 +4,9 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-@mixin img-styleds ($background-image, $background-size, $background-attachment, $height) {
+@mixin img-styleds ($background-image, $background-size, $height) {
   background-image: $background-image;
   background-size: $background-size;
-  background-attachment: $background-attachment;
   height: $height;
 }
 
@@ -17,7 +16,7 @@
 }
 
 #main-content {
-  @include img-styleds(url(../Imagens/falcon9/01.jpg), cover, fixed, 40rem);
+  @include img-styleds(url(../Imagens/falcon9/01.jpg), cover, 100vh);
   background-size: 100% 100%;
 
   #titleOne {
@@ -116,7 +115,7 @@
 }
 
 #content-two {
-  @include img-styleds(url(../Imagens/falcon9/02.jpg), cover, fixed, 45rem);
+  @include img-styleds(url(../Imagens/falcon9/02.jpg), cover, 100vh);
   background-size: 100% 100%;
 
   #contentTwo {
@@ -155,7 +154,7 @@
     height: 40rem;   
 
     .one {
-      @include img-styleds(url(../Imagens/falcon9/03.jpg), cover, none, 40rem);
+      @include img-styleds(url(../Imagens/falcon9/03.jpg), cover, 40rem);
       background-size: 100% 100%;
 
       #tableOne {
@@ -182,7 +181,7 @@
     }
 
     .two {
-      @include img-styleds(url(../Imagens/falcon9/04.jpg), cover, none, 40rem);
+      @include img-styleds(url(../Imagens/falcon9/04.jpg), cover, 40rem);
       background-size: 100% 100%;
 
       #content {
@@ -210,7 +209,7 @@
     }
 
     .third {
-      @include img-styleds(url(../Imagens/falcon9/05.jpg), cover, none, 40rem);
+      @include img-styleds(url(../Imagens/falcon9/05.jpg), cover, 40rem);
       background-size: 100% 100%;
 
       #content {
@@ -230,7 +229,7 @@
     }
 
     .fourth {
-      @include img-styleds(url(../Imagens/falcon9/06.jpg), cover, none, 40rem);
+      @include img-styleds(url(../Imagens/falcon9/06.jpg), cover, 40rem);
       background-size: 100% 100%;
 
       #content {
@@ -250,7 +249,7 @@
     }
 
     .five {
-      @include img-styleds(url(../Imagens/falcon9/07.jpg), cover, none, 40rem);
+      @include img-styleds(url(../Imagens/falcon9/07.jpg), cover, 40rem);
       background-size: 100% 100%;
 
       #content {
@@ -272,7 +271,7 @@
 } 
 
 #content-fourth {
-  @include img-styleds(url(../Imagens/falcon9/08.jpg), cover, fixed, 40rem);
+  @include img-styleds(url(../Imagens/falcon9/08.jpg), cover, 100vh);
   background-size: 100% 100%;
 
   #content {
@@ -311,32 +310,32 @@
     height: 40rem;   
 
     .one {
-      @include img-styleds(url(../Imagens/falcon9/09.jpg), cover, fixed, 40rem);
+      @include img-styleds(url(../Imagens/falcon9/09.jpg), cover, 40rem);
       background-size: 100% 100%;
     }
 
     .two {
-      @include img-styleds(url(../Imagens/falcon9/10.jpg), cover, fixed, 40rem);
+      @include img-styleds(url(../Imagens/falcon9/10.jpg), cover, 40rem);
       background-size: 100% 100%;
     }
 
     .third {
-      @include img-styleds(url(../Imagens/falcon9/11.jpg), cover, fixed, 40rem);
+      @include img-styleds(url(../Imagens/falcon9/11.jpg), cover, 40rem);
       background-size: 100% 100%;
     }
 
     .fourth {
-      @include img-styleds(url(../Imagens/falcon9/12.jpg), cover, fixed, 40rem);
+      @include img-styleds(url(../Imagens/falcon9/12.jpg), cover, 40rem);
       background-size: 100% 100%;
     }
 
     .five {
-      @include img-styleds(url(../Imagens/falcon9/13.jpg), cover, fixed, 40rem);
+      @include img-styleds(url(../Imagens/falcon9/13.jpg), cover, 40rem);
       background-size: 100% 100%;
     }
 
     .six {
-      @include img-styleds(url(../Imagens/falcon9/14.jpg), cover, fixed, 40rem);
+      @include img-styleds(url(../Imagens/falcon9/14.jpg), cover, 40rem);
       background-size: 100% 100%;
     }
   }
@@ -508,12 +507,6 @@ footer {
         height: 3rem;
       }
     }
-}
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  #main-content, #content-two, #content-third, #content-fourth, #content-five {
-    background-attachment: none;
-  }
 }
 
 @media screen and (max-width: 750px) {
