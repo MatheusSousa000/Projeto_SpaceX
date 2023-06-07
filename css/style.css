@@ -15,8 +15,9 @@
 #main-content {
   background-image: url(../Imagens/home/01.jpg);
   background-size: cover;
-  background-attachment: none;
+  background-attachment: fixed;
   height: 40rem;
+  background-position: center;
 }
 #main-content header {
   color: #fff;
@@ -130,6 +131,7 @@
   background-size: cover;
   background-attachment: fixed;
   height: 40rem;
+  background-position: center;
 }
 #content-third #contentThird {
   cursor: default;
@@ -150,7 +152,7 @@
   background-size: cover;
   background-attachment: fixed;
   height: 40rem;
-  background-position: right;
+  background-position: center;
 }
 #content-fourth #contentFourth {
   cursor: default;

@@ -35,7 +35,8 @@
 }
 
 #main-content {
-  @include main-content-styleds(url(../Imagens/home/01.jpg), cover, none, 40rem);
+  @include main-content-styleds(url(../Imagens/home/01.jpg), cover, fixed, 40rem);
+  background-position: center;
 
   header {
     color: #fff;
@@ -139,6 +140,7 @@
 
 #content-third {
   @include main-content-styleds(url(../Imagens/home/02.gif), cover, fixed, 40rem);
+  background-position: center;
 
   #contentThird {
     @include text-styleds(default, 11rem 0 0 2rem, #fff, 35rem);
@@ -151,7 +153,8 @@
 
 #content-fourth {
   @include main-content-styleds(url(../Imagens/home/04.jpg), cover, fixed, 40rem);
-  background-position: right;
+  background-position: center;
+
 
   #contentFourth {
     @include text-styleds(default, 11rem 0 0 2rem, #fff, 32rem);
