@@ -35,7 +35,7 @@
 }
 
 #main-content {
-  @include main-content-styleds(url(../Imagens/home/01.jpg), cover, fixed, 40rem);
+  @include main-content-styleds(url(../Imagens/home/01.jpg), cover, none, 40rem);
   background-position: right;
 
   header {
