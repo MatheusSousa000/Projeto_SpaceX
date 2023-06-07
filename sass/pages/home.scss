@@ -36,6 +36,7 @@
 #main-content {
   @include main-content-styleds(url(../Imagens/home/01.jpg), cover, 100vh);
   background-position: center;
+  background-attachment: fixed;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
@@ -130,6 +131,7 @@
   @include main-content-styleds(url(../Imagens/home/03.jpg), cover, 100vh);
   background-position: center;
   background-size: 100% 100%;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 
   #contentTwo {
@@ -145,6 +147,7 @@
   @include main-content-styleds(url(../Imagens/home/02.gif), cover, 100vh);
   background-position: center;
   background-size: 100% 100%;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 
   #contentThird {
@@ -160,6 +163,7 @@
   @include main-content-styleds(url(../Imagens/home/04.jpg), cover, 100vh);
   background-position: center;
   background-size: 100% 100%;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 
   #contentFourth {
@@ -236,6 +240,12 @@ footer {
       width: 3rem;
       height: 3rem;
     }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #main-content, #content-two, #content-third,#content-fourth {
+    background-attachment: none;
   }
 }
 
