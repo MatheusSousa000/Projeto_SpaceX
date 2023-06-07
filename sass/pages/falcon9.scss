@@ -27,7 +27,6 @@
 
   header {
     color: #fff;
-    padding: 0 2rem 0 0;
     background-color: transparent;
     
     #imgLogo {
@@ -97,7 +96,8 @@
   .active::after {
     transform: scaleX(1);
   }
-}
+  }
+
   #content {
     cursor: default;
     color: #fff;
@@ -378,6 +378,7 @@ footer {
 
   #titleFooter {
     margin: 0;
+    font-weight: 600;
   }
 
   #icons {

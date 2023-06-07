@@ -22,7 +22,6 @@
 }
 #main-content header {
   color: #fff;
-  padding: 0;
   background-color: transparent;
 }
 #main-content header #imgLogo {
@@ -37,20 +36,21 @@
   height: 2.5rem;
   width: 2.5rem;
   padding: 0;
-  margin-bottom: 1rem;
+  margin: 0 2rem 1rem 2rem;
 }
 #main-content header .navbar-nav {
   display: flex;
   gap: 15px;
 }
-#main-content header .navBarBtn {
-  transition: 0.5s;
-  border: 1px solid transparent;
-  text-transform: uppercase;
-  margin-top: 0;
+#main-content header .navbar-nav .nav-item {
   padding: 0;
+}
+#main-content header .navBarBtn {
   color: #fff;
+  border: 1px solid transparent;
   background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 0.8rem;
 }
@@ -98,8 +98,8 @@
   padding: 1rem 2.2rem 1rem 2.2rem;
 }
 #main-content #arrowDown {
-  width: 6rem;
-  height: 3rem;
+  width: 8rem;
+  height: 5rem;
   display: grid;
   place-items: center;
   margin: 0 auto;
@@ -233,6 +233,10 @@ footer #icons .icon:hover {
 @media screen and (max-width: 385px) {
   .img-fluid {
     width: 11rem;
+  }
+  #main-content header #imgLogo {
+    height: 5rem;
+    max-width: 10rem;
   }
 }
 

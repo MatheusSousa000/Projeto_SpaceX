@@ -41,9 +41,8 @@
 
   header {
     color: #fff;
-    padding: 0;
     background-color: transparent;
-
+    
     #imgLogo {
       height: 5rem;
       max-width: 15rem;
@@ -58,22 +57,28 @@
     height: 2.5rem;
     width: 2.5rem;
     padding: 0;
-    margin-bottom: 1rem;
+    margin: 0 2rem 1rem 2rem;
   }
 
   .navbar-nav {
     display: flex;
     gap: 15px;
+
+    .nav-item {
+      padding: 0;
+    }
   }
 
   .navBarBtn {
-    @include button-styleds(0.5s, 1px solid transparent, uppercase, 0, 0);
     color: #fff;
+    border: 1px solid transparent;
     background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
     font-weight: 600;
     font-size: 0.8rem;
-
   }
+
   .link {
     position: relative;
     display: inline-block;
@@ -105,7 +110,7 @@
   .active::after {
     transform: scaleX(1);
   }
-}
+  }
   #content {
     cursor: default;
     color: #fff;
@@ -117,8 +122,8 @@
   }
 
   #arrowDown {
-    width: 6rem;
-    height: 3rem;
+    width: 8rem;
+    height: 5rem;
     display: grid;
     place-items: center;
     margin: 0 auto;
@@ -242,5 +247,9 @@ footer {
 @media screen and (max-width: 385px) {
   .img-fluid {
     width: 11rem;
+  }
+  #main-content header #imgLogo {
+    height: 5rem;
+    max-width: 10rem;
   }
 }
