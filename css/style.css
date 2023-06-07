@@ -111,6 +111,8 @@
   background-attachment: fixed;
   height: 40rem;
   background-position: center;
+  background-repeat: no-repeat;
+  width: auto;
 }
 #content-two #contentTwo {
   cursor: default;
@@ -131,7 +133,9 @@
   background-size: cover;
   background-attachment: fixed;
   height: 40rem;
+  background-repeat: no-repeat;
   background-position: center;
+  width: auto;
 }
 #content-third #contentThird {
   cursor: default;
