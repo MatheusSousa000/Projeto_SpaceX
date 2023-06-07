@@ -12,9 +12,10 @@
   top: 0;
 }
 
-@mixin main-content-styleds($background-image, $background-size) {
+@mixin main-content-styleds($background-image, $background-size, $min-height) {
   background-image: $background-image;
   background-size: $background-size;
+  height: $height;
 }
 
 @mixin button-styleds($transition, $border, $text-transform, $margin-top, $padding) {
@@ -33,9 +34,9 @@
 }
 
 #main-content {
-  @include main-content-styleds(url(../Imagens/home/01.jpg), cover);
+  @include main-content-styleds(url(../Imagens/home/01.jpg), cover, 100vh);
   background-position: center;
-  min-height: 100vh;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 
   header {
@@ -126,9 +127,9 @@
 }
 
 #content-two {
-  @include main-content-styleds(url(../Imagens/home/03.jpg), cover);
+  @include main-content-styleds(url(../Imagens/home/03.jpg), cover, 100vh);
   background-position: center;
-  min-height: 100vh;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 
   #contentTwo {
@@ -141,9 +142,9 @@
 }
 
 #content-third {
-  @include main-content-styleds(url(../Imagens/home/02.gif), cover);
+  @include main-content-styleds(url(../Imagens/home/02.gif), cover, 100vh);
   background-position: center;
-  min-height: 100vh;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 
   #contentThird {
@@ -156,9 +157,9 @@
 }
 
 #content-fourth {
-  @include main-content-styleds(url(../Imagens/home/04.jpg), cover);
+  @include main-content-styleds(url(../Imagens/home/04.jpg), cover, 100vh);
   background-position: center;
-  min-height: 100vh;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 
   #contentFourth {
