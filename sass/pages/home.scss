@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#indicator {
+  background-color: #fff;
+  height: .35rem;
+  width: 0;
+  position: fixed;
+  top: 0;
+}
+
+@mixin main-content-styleds($background-image, $background-size, $background-attachment, $height) {
+  background-image: $background-image;
+  background-size: $background-size;
+  background-attachment: $background-attachment;
+  height: $height;
+}
+
+@mixin button-styleds($transition, $border, $text-transform, $margin-top, $padding) {
+  transition: $transition;
+  border: $border;
+  text-transform: $text-transform;
+  margin-top: $margin-top;
+  padding: $padding;
+}
+
+@mixin text-styleds($cursor, $padding, $color, $max-width) {
+  cursor: $cursor;
+  padding: $padding;
+  color: $color;
+  max-width: $max-width;
+}
+
+#main-content {
+  @include main-content-styleds(url(../Imagens/home/01.jpg), cover, fixed, 39.8rem);
+  background-size: 100% 100%;
+
+  header {
+    color: #fff;
+    padding: 0;
+    background-color: transparent;
+
+    #imgLogo {
+      height: 5rem;
+      max-width: 15rem;
+    }
+
+  .img-fluid {
+    margin-right: 1rem;
+    max-width: 15rem;
+  }
+
+  .navbar-toggler {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .navbar-nav {
+    display: flex;
+    gap: 15px;
+  }
+
+  .navBarBtn {
+    @include button-styleds(0.5s, 1px solid transparent, uppercase, 0, 0);
+    color: #fff;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 0.8rem;
+
+  }
+  .link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+  }
+  .link::before,
+  .link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.35s;
+  }
+  .link::before {
+    top: -5px;
+    transform-origin: left;
+  }
+  .link::after {
+    bottom: -3px;
+    transform-origin: right;
+  }
+  .link:hover::before,
+  .link:hover::after,
+  .active::before,
+  .active::after {
+    transform: scaleX(1);
+  }
+}
+  #content {
+    cursor: default;
+    color: #fff;
+    margin: 11.5rem 0 0 2.3rem;
+
+    #mainBtn {
+      @include button-styleds(0.5s, 2px solid #fff, uppercase, 3rem, 1rem 2.2rem 1rem 2.2rem);
+    }
+  }
+
+  #arrowDown {
+    width: 6rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+}
+
+#content-two {
+  @include main-content-styleds(url(../Imagens/home/03.jpg), cover, fixed, 39.8rem);
+  background-size: 100% 100%;
+
+  #contentTwo {
+    @include text-styleds(default, 11rem 0 0 2rem, #fff, 35rem);
+
+    #mainBtnTwo {
+      @include button-styleds(0.5s, 2px solid #fff, uppercase, 3rem, 1rem 2.2rem 1rem 2.2rem);
+    }
+  }
+}
+
+#content-third {
+  @include main-content-styleds(url(../Imagens/home/02.gif), cover, fixed, 39.8rem);
+  background-size: 100% 100%;
+
+  #contentThird {
+    @include text-styleds(default, 11rem 0 0 2rem, #fff, 35rem);
+
+    #mainBtnThird {
+      @include button-styleds(0.5s, 2px solid #fff, uppercase, 3rem, 1rem 2.2rem 1rem 2.2rem);
+    }
+  }
+}
+
+#content-fourth {
+  @include main-content-styleds(url(../Imagens/home/04.jpg), cover, fixed, 39.8rem);
+  background-size: 100% 100%;
+
+  #contentFourth {
+    @include text-styleds(default, 11rem 0 0 2rem, #fff, 32rem);
+
+    #mainBtnFourth {
+      @include button-styleds(0.5s, 2px solid #fff, uppercase, 3rem, 1rem 2.2rem 1rem 2.2rem);
+    }
+  }
+}
+
+footer {
+  color: #fff;
+  cursor: default;
+  background-color: #000;
+  height: 6rem;
+  display: grid;
+  place-items: center;
+
+  #titleFooter {
+    font-weight: 600;
+    margin: 0;
+  }
+
+  #icons {
+    display: flex;
+    gap: 15px;
+
+    .icon {
+      transition: 0.5s;
+
+      &:hover {
+        scale: 1.2;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1700px) and (max-width: 2560px) {
+  #main-content, #content-two, #content-third, #content-fourth {
+    height: 70rem;
+  }
+
+  #main-content header {
+    #imgLogo {
+      height: 10rem;
+      max-width: 30rem;
+    }
+    .navBarBtn {
+      font-size: 1.5rem;
+    }
+  }
+
+  #mainContent h1 {
+    font-size: 4rem;
+    max-width: 50rem;
+  }
+  #mainContent h5 {
+    font-size: 2rem;
+  }
+    #mainBtn, #mainBtnTwo, #mainBtnThird, #mainBtnFourth {
+    font-size: 2rem;
+    border-radius: 0.4rem;
+  }
+
+  footer {
+    height: 100%;
+    #titleFooter {
+      font-weight: 600;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    #icons .icon {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .img-fluid {
+    width: 11rem;
+  }
+}

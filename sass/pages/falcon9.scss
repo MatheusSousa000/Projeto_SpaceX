@@ -1,0 +1,726 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@mixin img-styleds ($background-image, $background-size, $background-attachment, $height) {
+  background-image: $background-image;
+  background-size: $background-size;
+  background-attachment: $background-attachment;
+  height: $height;
+}
+
+@mixin texts-styleds ($padding, $max-width) {
+  padding: $padding;
+  max-width: $max-width;
+}
+
+#main-content {
+  @include img-styleds(url(../Imagens/falcon9/01.jpg), cover, fixed, 40rem);
+  background-size: 100% 100%;
+
+  #titleOne {
+    font-size: 6rem;
+    cursor: default;
+    font-weight: 600
+  }
+
+  header {
+    color: #fff;
+    padding: 0 2rem 0 0;
+    background-color: transparent;
+    
+    #imgLogo {
+      height: 5rem;
+      max-width: 15rem;
+    }
+
+  .img-fluid {
+    margin-right: 1rem;
+    max-width: 15rem;
+  }
+
+  .navbar-toggler {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0;
+    margin: 2rem;
+    color: transparent;
+  }
+
+  .navbar-nav {
+    display: flex;
+    gap: 15px;
+
+    .nav-item {
+      padding: 0;
+    }
+  }
+
+  .navBarBtn {
+    color: #fff;
+    border: 1px solid transparent;
+    background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+  .link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+  }
+  .link::before,
+  .link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.35s;
+  }
+  .link::before {
+    top: -5px;
+    transform-origin: left;
+  }
+  .link::after {
+    bottom: -3px;
+    transform-origin: right;
+  }
+  .link:hover::before,
+  .link:hover::after,
+  .active::before,
+  .active::after {
+    transform: scaleX(1);
+  }
+}
+  #content {
+    cursor: default;
+    color: #fff;
+    margin: 8.5rem 0 0 1.6rem;
+
+    #mainBtn {
+      transition: 0.5s;
+      border: 2px solid #fff;
+      text-transform: uppercase;
+      margin-top: 3rem;
+      padding: 1rem 2.2rem 1rem 2.2rem;
+    }
+  }
+}
+
+#content-two {
+  @include img-styleds(url(../Imagens/falcon9/02.jpg), cover, fixed, 45rem);
+  background-size: 100% 100%;
+
+  #contentTwo {
+    cursor: default;
+    padding-top: 2rem;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .titleContent {
+      cursor: default;
+      font-size: 6rem;
+      margin: 0;
+    }
+    .descriptionContent {
+      cursor: default;
+      font-size: 1.3rem;
+    }
+  }
+
+  #mainTitle {
+    cursor: default;
+    padding: 5rem 0 0 0;
+    margin: 0 0 0 2.5rem;
+    color: #fff;
+    font-size: 1.6rem;
+    max-width: 37.5rem;
+  }
+}
+
+#content-third {
+  .d-block {
+    height: 40rem;
+  }
+  .carousel-inner {
+    height: 40rem;   
+
+    .one {
+      @include img-styleds(url(../Imagens/falcon9/03.jpg), cover, none, 40rem);
+      background-size: 100% 100%;
+
+      #tableOne {
+        padding: 12rem 0 0 6rem;
+
+        #titleTable {
+          cursor: default;
+          color: #fff;
+          font-size: 1.2rem;
+        }
+
+        #descriptionTable {
+          cursor: default;
+          color: #fff;
+          font-size: 1.8rem;
+          font-weight: 600;
+        }
+
+        .table {
+        color: #fff;
+        max-width: 30rem;
+        }
+      }
+    }
+
+    .two {
+      @include img-styleds(url(../Imagens/falcon9/04.jpg), cover, none, 40rem);
+      background-size: 100% 100%;
+
+      #content {
+        padding: 13rem 0 0 8rem;
+        max-width: 36rem;
+
+        #titleOne {
+          color: #fff;
+          font-size: 1.1rem;
+        }
+
+        #titleTwo {
+          color: #fff;
+          font-size: 1.8rem;
+          font-weight: 600;
+          margin: 0
+        }
+
+        #descriptionOne, #descriptionTwo {
+          padding-top: 1rem;
+          margin: 0;
+          color: #fff;
+        }
+      }
+    }
+
+    .third {
+      @include img-styleds(url(../Imagens/falcon9/05.jpg), cover, none, 40rem);
+      background-size: 100% 100%;
+
+      #content {
+        padding: 13rem 0 0 8rem;
+        max-width: 34.5rem;
+        color: #e4e4e4;
+
+        #titleTwo {
+          font-size: 1.8rem;
+          font-weight: 600;
+        }
+
+        #widthTable {
+          color: #e4e4e4;
+        }
+      }
+    }
+
+    .fourth {
+      @include img-styleds(url(../Imagens/falcon9/06.jpg), cover, none, 40rem);
+      background-size: 100% 100%;
+
+      #content {
+        padding: 13rem 0 0 8rem;
+        max-width: 38rem;
+        color: #e4e4e4;
+
+        .title {
+          font-size: 1.2rem;
+        }
+
+        #mainTitle {
+          font-size: 1.6rem;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .five {
+      @include img-styleds(url(../Imagens/falcon9/07.jpg), cover, none, 40rem);
+      background-size: 100% 100%;
+
+      #content {
+        padding: 13rem 0 0 8rem;
+        max-width: 34.5rem;
+        color: #e4e4e4;
+
+        #titleTwo {
+          font-size: 1.7rem;
+          font-weight: 600;
+        }
+
+        #widthTable {
+          color: #e4e4e4;
+        }
+      }
+    }
+  }
+} 
+
+#content-fourth {
+  @include img-styleds(url(../Imagens/falcon9/08.jpg), cover, fixed, 40rem);
+  background-size: 100% 100%;
+
+  #content {
+    cursor: default;
+    padding: 12rem 0 0 8rem;
+    max-width: 34.5rem;
+    color: #e4e4e4;
+
+    #titleTwo {
+      cursor: default;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    #widthTable {
+      color: #e4e4e4;
+    }
+  }
+}
+
+#content-five {
+  cursor: default;
+
+  .paragraph {
+    background-color: #000;
+    color: #fff;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+  }
+
+  .d-block {
+    height: 40rem;
+  }
+  .carousel-inner {
+    width: 100%;
+    height: 40rem;   
+
+    .one {
+      @include img-styleds(url(../Imagens/falcon9/09.jpg), cover, fixed, 40rem);
+      background-size: 100% 100%;
+    }
+
+    .two {
+      @include img-styleds(url(../Imagens/falcon9/10.jpg), cover, fixed, 40rem);
+      background-size: 100% 100%;
+    }
+
+    .third {
+      @include img-styleds(url(../Imagens/falcon9/11.jpg), cover, fixed, 40rem);
+      background-size: 100% 100%;
+    }
+
+    .fourth {
+      @include img-styleds(url(../Imagens/falcon9/12.jpg), cover, fixed, 40rem);
+      background-size: 100% 100%;
+    }
+
+    .five {
+      @include img-styleds(url(../Imagens/falcon9/13.jpg), cover, fixed, 40rem);
+      background-size: 100% 100%;
+    }
+
+    .six {
+      @include img-styleds(url(../Imagens/falcon9/14.jpg), cover, fixed, 40rem);
+      background-size: 100% 100%;
+    }
+  }
+}
+
+#content-six {
+  background-color: #000;
+  height: 30rem;
+  display: grid;
+  place-items: center;
+  gap: 25px;
+
+    cursor: default;
+    #mainTitle {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 1rem;
+    margin: 0.5rem;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #e4e4e4;
+      color: #000;
+    }
+  }
+}
+
+footer {
+  color: #fff;
+  cursor: default;
+  background-color: #000;
+  height: 6rem;
+  display: grid;
+  place-items: center;
+
+  #titleFooter {
+    margin: 0;
+  }
+
+  #icons {
+    display: flex;
+    gap: 15px;
+
+    .icon {
+      transition: 0.5s;
+
+      &:hover {
+        scale: 1.2;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 2560px) {
+  #main-content, #content-two, #content-fourth {
+    height: 70rem;
+  }
+
+  #main-content {
+    header {
+      #imgLogo {
+        height: 8rem;
+        max-width: 25rem;
+      }
+      .navBarBtn {
+        font-size: 1.5rem;
+      }
+    }
+    #titleOne {
+      padding-top: 10rem;
+      font-size: 7rem;
+    }
+    #paragraphOne {
+      font-size: 2rem;
+    }
+  }
+
+  #content-two #mainTitle{
+    @include texts-styleds(0 0 0 10rem, 60rem);
+    font-size: 2.5rem;
+  }
+
+  #content-third {
+    .d-block {
+      height: 70rem;
+    }
+  }
+
+  #content-third .carousel-inner {
+    height: 70rem;
+      .one {
+        height: 70rem;
+        padding-left: 10rem;
+          #tableOne {
+            font-size: 2rem;
+            max-width: 70rem;
+          }
+    }
+  }
+
+  #content-third .carousel-inner .two {
+    height: 70rem;
+    margin: 0;
+      #content {
+        @include texts-styleds(0 0 0 15rem, 50rem);
+        height: 70rem;
+        font-size: 2rem;
+      }
+  }
+
+  #content-third .carousel-inner .third,
+  #content-third .carousel-inner .fourth,
+  #content-third .carousel-inner .five {
+    height: 70rem;
+    font-size: 1.8rem;
+    padding-left: 10rem;
+      #content {
+        max-width: 50rem;
+    }
+  } 
+
+  #content-fourth #content{
+    font-size: 2.2rem;
+    max-width: 50rem;
+  }
+
+  #content-five {
+    .paragraph {
+      font-size: 2rem;
+    }
+    .d-block {
+      height: 70rem;
+    }
+  }
+
+  #content-five .carousel-inner {
+    width: 100%;
+    height: 70rem; 
+    .one, .two, .third, .fourth, .five, .six {
+      height: 70rem;
+    }
+  }
+
+  #content-six {
+    #mainTitle {
+      font-size: 2rem;
+    }
+    .btn {
+      padding: 2rem;
+      font-size: 2rem;
+      border-radius: 1rem;
+    }
+  }
+
+  footer {
+    height: 100%;
+      #titleFooter {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      #icons .icon{
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+}
+
+@media screen and (max-width: 750px) {
+  #content-two #mainTitle{
+    color: #fff;
+    font-size: 1.3rem;
+    max-width: 30rem;
+  }
+
+  #content-two #contentTwo {
+    .titleContent {
+      font-size: 4rem;
+      margin: 0;
+    }
+    .descriptionContent {
+      cursor: default;
+      font-size: 1rem;
+    }
+  }
+
+  #content-third .carousel-inner .one #tableOne .table{
+    color: #fff;
+    max-width: 25rem;
+  }
+}
+
+@media screen and (max-width: 596px) {
+  #content-third .carousel-inner .one {
+    #tableOne {
+      padding: 2rem 0 0 2rem;
+    }
+    #content {
+      padding: 0;
+    }
+  }
+
+  #content-third .carousel-inner .two #content {
+    @include texts-styleds(2rem 0 0 2rem, 22rem);
+  }
+
+  #content-third .carousel-inner .third #content,
+  #content-third .carousel-inner .fourth #content,
+  #content-third .carousel-inner .five #content {
+    @include texts-styleds(2rem 0 0 2rem, 27rem);
+  }
+
+  #content-fourth #content{
+    @include texts-styleds(2rem 0 0 2rem, 25rem);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #main-content {
+    #content {
+      margin: 10rem 2rem 0rem 2rem;
+    #titleOne {
+      font-size: 4.5rem;
+    }
+  }
+}
+
+  #content-two {
+  #mainTitle {
+    font-size: 1.2rem;
+    max-width: 25rem;
+  }
+
+  #contentTwo {
+    .titleContent {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .descriptionContent {
+      cursor: default;
+      font-size: 0.5rem;
+      font-weight: 600;
+    }
+  }
+}
+
+  #content-third {
+    .carousel-inner {
+      .one {
+        #tableOne {
+          padding: 2rem 0 0 2rem;
+        }
+        #content {
+          padding: 0;
+        }
+      }
+      .two {
+        #content {
+          padding: 2rem 0 0 2rem;
+          max-width: 20rem;
+        }
+      }
+      .third {
+        #content {
+          padding: 2rem 0 0 2rem;
+          max-width: 25rem;
+        }
+      }
+      .fourth {
+        #content {
+          padding: 2rem 0 0 2rem;
+          max-width: 25rem;
+        }
+      }
+      .five {
+        #content {
+          padding: 2rem 0 0 2rem;
+          max-width: 25rem;
+        }
+      }
+    } 
+  }
+}
+
+@media screen and (max-width: 495px) {
+  #content-third .carousel-inner .one {
+    #tableOne {
+      @include texts-styleds(2rem 0 0 2rem, 22rem);
+    }
+    #content {
+      @include texts-styleds(0, 22rem);
+    } 
+  }
+
+  #content-third .carousel-inner .two #content {
+    @include texts-styleds(2rem 0 0 2rem, 17rem);
+  }
+
+  #content-third .carousel-inner .third #content,
+  #content-third .carousel-inner .fourth #content,
+  #content-third .carousel-inner .five #content{
+    @include texts-styleds(2rem 0 0 2rem, 22rem);
+  }
+
+  #content-fourth #content{
+    @include texts-styleds(2rem 0 0 2rem, 21rem);
+  }
+}
+
+@media screen and (max-width: 438px) {
+  #main-content #content{
+    #titleOne {
+      font-size: 3.4rem;
+  }
+    #paragraphOne {
+      font-size: 0.9rem;
+  }
+  }
+
+  #main-content {
+    header {
+      padding: 0;
+      #imgLogo {
+        height: 5rem;
+        max-width: 10rem;
+      }
+    }
+  }
+
+  #content-two #mainTitle{
+    color: #fff;
+    font-size: 1.1rem;
+    max-width: 20rem;
+  }
+
+  #content-third .carousel-inner .one{
+    #tableOne {
+      @include texts-styleds(2rem 0 0 2rem, 19rem);
+    }
+    #content {
+      @include texts-styleds(0, 19rem);
+    }
+  }
+  #content-third .carousel-inner .two #content {
+    @include texts-styleds(2rem 0 0 2rem, 14rem);
+  }
+
+  #content-third .carousel-inner .third #content,
+  #content-third .carousel-inner .fourth #content,
+  #content-third .carousel-inner .five #content {
+    @include texts-styleds(2rem 0 0 2rem, 19rem);
+  }
+}
+
+@media screen and (max-width: 386px) {
+  #content-two #mainTitle {
+    margin: 1rem;
+  }
+
+  #content-third .carousel-inner .one{
+    #tableOne {
+      max-width: 17rem;
+    }
+    #content {
+      @include texts-styleds(0, 16rem);
+    }
+  }
+
+  #content-third .carousel-inner .two #content {
+    @include texts-styleds(2rem 0 0 2rem, 12rem);
+  }
+
+  #content-third .carousel-inner .third #content,
+  #content-third .carousel-inner .fourth #content,
+  #content-third .carousel-inner .five #content {
+    @include texts-styleds(2rem 0 0 2rem, 16rem);
+  }
+
+  #content-fourth #content {
+    @include texts-styleds(2rem 0 0 2rem, 17rem);
+  }
+}

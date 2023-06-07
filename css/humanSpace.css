@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#indicator {
+  background-color: #fff;
+  height: 0.35rem;
+  width: 0;
+  position: fixed;
+  top: 0;
+}
+
+#main-content {
+  background-image: url(../Imagens/humanFlight/01.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 40rem;
+  background-size: 100% 100%;
+}
+#main-content header {
+  margin-bottom: 10rem;
+  color: #fff;
+}
+#main-content header #imgLogo {
+  height: 5rem;
+  max-width: 15rem;
+  margin-right: 2rem;
+}
+#main-content header .img-fluid {
+  margin-right: 1rem;
+  max-width: 15rem;
+}
+#main-content header .navbar-toggler {
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+#main-content header .navbar-nav {
+  display: flex;
+  gap: 15px;
+}
+#main-content header .navbar-nav .nav-item {
+  padding: 0;
+}
+#main-content header .navBarBtn {
+  transition: 0.5s;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+#main-content header .link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+#main-content header .link::before,
+#main-content header .link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.35s;
+}
+#main-content header .link::before {
+  top: -5px;
+  transform-origin: left;
+}
+#main-content header .link::after {
+  bottom: -3px;
+  transform-origin: right;
+}
+#main-content header .link:hover::before,
+#main-content header .link:hover::after,
+#main-content header .active::before,
+#main-content header .active::after {
+  transform: scaleX(1);
+}
+#main-content #content {
+  cursor: default;
+  color: #fff;
+  padding: 0;
+}
+#main-content #content h1 {
+  font-weight: 600;
+  font-size: 6rem;
+}
+#main-content #content h5 {
+  font-size: 2rem;
+  margin: 2rem 0 3rem 0;
+}
+#main-content #arrowDown {
+  width: 7rem;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+#content-two {
+  background-image: url(../Imagens/humanFlight/02.jpg);
+  background-attachment: none;
+  background-size: cover;
+  height: 40rem;
+  background-size: 100% 100%;
+}
+#content-two #paragraph {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  max-width: 50rem;
+  padding-top: 2rem;
+}
+#content-two #contentTwo {
+  margin: 10rem 0 0 34rem;
+  cursor: default;
+  color: #fff;
+}
+#content-two #contentTwo h1 {
+  font-size: 3rem;
+}
+#content-two #contentTwo h5 {
+  font-size: 1rem;
+}
+#content-two #contentTwo #mainBtnTwo {
+  margin-top: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+  text-transform: uppercase;
+}
+
+#content-third {
+  background-image: url(../Imagens/humanFlight/03.jpg);
+  background-attachment: none;
+  background-size: cover;
+  height: 40rem;
+  background-size: 100% 100%;
+}
+#content-third #contentThird {
+  cursor: default;
+  color: #fff;
+  padding: 10rem 2rem 0 2rem;
+}
+#content-third #contentThird h1 {
+  font-size: 3rem;
+}
+#content-third #contentThird h5 {
+  font-size: 1rem;
+  max-width: 29rem;
+}
+#content-third #contentThird #mainBtnThird {
+  margin-top: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+  text-transform: uppercase;
+}
+
+#content-fourth {
+  background-image: url(../Imagens/humanFlight/04.jpg);
+  background-attachment: none;
+  background-size: cover;
+  height: 40rem;
+  background-size: 100% 100%;
+}
+#content-fourth #contentFourth {
+  cursor: default;
+  color: #fff;
+  padding: 10rem 2rem 0 34rem;
+}
+#content-fourth #contentFourth h1 {
+  font-size: 3rem;
+}
+#content-fourth #contentFourth h5 {
+  font-size: 1rem;
+}
+#content-fourth #contentFourth #mainBtnFourth {
+  margin-top: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+  text-transform: uppercase;
+}
+
+#content-five {
+  background-image: url(../Imagens/humanFlight/05.jpg);
+  background-attachment: none;
+  background-size: cover;
+  height: 40rem;
+  background-size: 100% 100%;
+}
+#content-five #contentFive {
+  cursor: default;
+  color: #fff;
+  padding: 10rem 2rem 0 2rem;
+}
+#content-five #contentFive h1 {
+  font-size: 3rem;
+}
+#content-five #contentFive h5 {
+  font-size: 1rem;
+  max-width: 31rem;
+}
+#content-five #contentFive #mainBtnFive {
+  margin-top: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+  text-transform: uppercase;
+}
+
+#content-six {
+  background-color: #000;
+  height: 30rem;
+  display: grid;
+  place-items: center;
+  gap: 25px;
+  cursor: default;
+}
+#content-six #mainTitle {
+  color: #fff;
+  font-size: 1.1rem;
+}
+#content-six .btn {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 1rem;
+  margin: 0.5rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#content-six .btn:hover {
+  background-color: #e4e4e4;
+  color: #000;
+}
+
+footer {
+  color: #fff;
+  cursor: default;
+  background-color: #000;
+  height: 6rem;
+  display: grid;
+  place-items: center;
+}
+footer #titleFooter {
+  margin: 0;
+  font-weight: 600;
+}
+footer #icons {
+  display: flex;
+  gap: 15px;
+}
+footer #icons .icon {
+  transition: 0.5s;
+}
+footer #icons .icon:hover {
+  scale: 1.2;
+}
+
+@media screen and (min-width: 1950px) and (max-width: 2560px) {
+  #main-content, #content-two, #content-third, #content-fourth, #content-five {
+    height: 60rem;
+  }
+  #main-content header #imgLogo {
+    height: 10rem;
+    max-width: 25rem;
+  }
+  #main-content header .navBarBtn {
+    font-size: 1.5rem;
+  }
+  #mainBtn, #mainBtnTwo, #mainBtnThird, #mainBtnFourth, #mainBtnFive {
+    padding: 1.2rem;
+    font-size: 1.5rem;
+  }
+  #content-two #contentTwo,
+  #content-fourth #contentFourth {
+    padding: 10rem 0 0 85rem;
+    margin: 0;
+  }
+  #content-two #contentTwo h1,
+  #content-fourth #contentFourth h1 {
+    font-size: 4rem;
+  }
+  #content-two #contentTwo h5,
+  #content-fourth #contentFourth h5 {
+    font-size: 1.6rem;
+  }
+  #content-third #contentThird,
+  #content-five #contentFive {
+    padding: 10rem 2rem 0 8rem;
+    cursor: default;
+    color: #fff;
+  }
+  #content-third #contentThird h1,
+  #content-five #contentFive h1 {
+    font-size: 4rem;
+  }
+  #content-third #contentThird h5,
+  #content-five #contentFive h5 {
+    font-size: 1.6rem;
+  }
+  #content-two #paragraph {
+    font-size: 2rem;
+    max-width: 70%;
+  }
+  #content-six #mainTitle {
+    font-size: 2rem;
+  }
+  #content-six .btn {
+    padding: 1.3rem;
+    font-size: 1.5rem;
+  }
+  footer #titleFooter {
+    font-size: 1.7rem;
+  }
+  footer #icons .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1949px) {
+  #main-content, #content-two, #content-third, #content-fourth, #content-five {
+    height: 50rem;
+  }
+  #content-two #contentTwo,
+  #content-fourth #contentFourth {
+    margin: 0;
+    padding: 8rem 0 0 60rem;
+  }
+  #content-two #contentTwo h1,
+  #content-fourth #contentFourth h1 {
+    font-size: 4rem;
+  }
+  #content-two #contentTwo h5,
+  #content-fourth #contentFourth h5 {
+    font-size: 1.6rem;
+  }
+  #content-third #contentThird,
+  #content-five #contentFive {
+    padding: 10rem 2rem 0 8rem;
+    cursor: default;
+    color: #fff;
+  }
+  #content-third #contentThird h1,
+  #content-five #contentFive h1 {
+    font-size: 4rem;
+  }
+  #content-third #contentThird h5,
+  #content-five #contentFive h5 {
+    font-size: 1.6rem;
+  }
+  #content-two #paragraph {
+    font-size: 2rem;
+    max-width: 70%;
+  }
+  #content-six #mainTitle {
+    font-size: 2rem;
+  }
+  #content-six .btn {
+    padding: 1.3rem;
+    font-size: 1.5rem;
+  }
+  footer #titleFooter {
+    font-size: 1.7rem;
+  }
+  footer #icons .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media screen and (max-width: 836px) {
+  #main-content #content h1 {
+    font-size: 4rem;
+  }
+  #main-content #content h5 {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  #content-two #contentTwo,
+  #content-fourth #contentFourth {
+    padding: 10rem 0 0 20rem;
+    margin: 0;
+  }
+  #content-two #contentTwo h1,
+  #content-fourth #contentFourth h1 {
+    font-size: 3rem;
+  }
+  #content-two #contentTwo h5,
+  #content-fourth #contentFourth h5 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 587px) {
+  #main-content, #content-two, #content-third, #content-third, #content-fourth, #content-five {
+    height: 35rem;
+  }
+  #content-two #contentTwo,
+  #content-fourth #contentFourth {
+    padding: 7rem 0 0 15rem;
+    margin: 0;
+  }
+  #content-two #contentTwo h1,
+  #content-fourth #contentFourth h1 {
+    font-size: 3rem;
+  }
+  #content-two #contentTwo h5,
+  #content-fourth #contentFourth h5 {
+    font-size: 1rem;
+  }
+  #content-two #paragraph {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 485px) {
+  #main-content, #content-two, #content-third, #content-third, #content-fourth, #content-five {
+    height: 28rem;
+  }
+  #main-content header #imgLogo {
+    height: 3rem;
+    max-width: 10rem;
+  }
+  #main-content #content {
+    color: #fff;
+    padding-top: 5rem;
+  }
+  #main-content #content h1 {
+    font-weight: 600;
+    font-size: 2.3rem;
+  }
+  #main-content #content h5 {
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem 0;
+  }
+  #content-two #contentTwo,
+  #content-fourth #contentFourth {
+    padding: 5rem 0 0 8rem;
+    margin: 0;
+  }
+  #content-two #contentTwo h1,
+  #content-fourth #contentFourth h1 {
+    font-size: 3rem;
+  }
+  #content-two #contentTwo h5,
+  #content-fourth #contentFourth h5 {
+    font-size: 1rem;
+  }
+  #content-two #paragraph {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  #content-two #contentTwo,
+  #content-fourth #contentFourth {
+    padding: 4rem 0 0 5rem;
+    margin: 0;
+  }
+  #content-two #contentTwo h1,
+  #content-fourth #contentFourth h1 {
+    font-size: 2rem;
+  }
+  #content-two #contentTwo h5,
+  #content-fourth #contentFourth h5 {
+    font-size: 0.8rem;
+  }
+  #content-two #paragraph {
+    font-size: 1rem;
+  }
+  #content-third #contentThird,
+  #content-five #contentFive {
+    padding: 10rem 2rem 0 2rem;
+    margin: 0;
+  }
+  #content-third #contentThird h1,
+  #content-five #contentFive h1 {
+    font-size: 2rem;
+  }
+  #content-third #contentThird h5,
+  #content-five #contentFive h5 {
+    font-size: 0.8rem;
+  }
+}
+
+/*# sourceMappingURL=humanSpace.css.map */
