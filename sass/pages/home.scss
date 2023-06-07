@@ -35,8 +35,7 @@
 }
 
 #main-content {
-  @include main-content-styleds(url(../Imagens/home/01.jpg), cover, fixed, 39.8rem);
-  background-size: 100% 100%;
+  @include main-content-styleds(url(../Imagens/home/01.jpg), cover, fixed, 40rem);
 
   header {
     color: #fff;
@@ -126,8 +125,7 @@
 }
 
 #content-two {
-  @include main-content-styleds(url(../Imagens/home/03.jpg), cover, fixed, 39.8rem);
-  background-size: 100% 100%;
+  @include main-content-styleds(url(../Imagens/home/03.jpg), cover, fixed, 40rem);
 
   #contentTwo {
     @include text-styleds(default, 11rem 0 0 2rem, #fff, 35rem);
@@ -139,8 +137,7 @@
 }
 
 #content-third {
-  @include main-content-styleds(url(../Imagens/home/02.gif), cover, fixed, 39.8rem);
-  background-size: 100% 100%;
+  @include main-content-styleds(url(../Imagens/home/02.gif), cover, fixed, 40rem);
 
   #contentThird {
     @include text-styleds(default, 11rem 0 0 2rem, #fff, 35rem);
@@ -152,8 +149,7 @@
 }
 
 #content-fourth {
-  @include main-content-styleds(url(../Imagens/home/04.jpg), cover, fixed, 39.8rem);
-  background-size: 100% 100%;
+  @include main-content-styleds(url(../Imagens/home/04.jpg), cover, fixed, 40rem);
 
   #contentFourth {
     @include text-styleds(default, 11rem 0 0 2rem, #fff, 32rem);
