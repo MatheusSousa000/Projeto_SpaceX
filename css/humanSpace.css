@@ -414,7 +414,7 @@ footer #icons .icon:hover {
 }
 @media screen and (max-width: 485px) {
   #main-content, #content-two, #content-third, #content-third, #content-fourth, #content-five {
-    height: 28rem;
+    height: 35rem;
   }
   #main-content header #imgLogo {
     height: 3rem;
