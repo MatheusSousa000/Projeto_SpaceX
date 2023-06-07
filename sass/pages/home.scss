@@ -12,10 +12,9 @@
   top: 0;
 }
 
-@mixin main-content-styleds($background-image, $background-size, $background-attachment) {
+@mixin main-content-styleds($background-image, $background-size) {
   background-image: $background-image;
   background-size: $background-size;
-  background-attachment: $background-attachment;
 }
 
 @mixin button-styleds($transition, $border, $text-transform, $margin-top, $padding) {
@@ -34,7 +33,7 @@
 }
 
 #main-content {
-  @include main-content-styleds(url(../Imagens/home/01.jpg), cover, fixed);
+  @include main-content-styleds(url(../Imagens/home/01.jpg), cover);
   background-position: center;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -127,7 +126,7 @@
 }
 
 #content-two {
-  @include main-content-styleds(url(../Imagens/home/03.jpg), cover, fixed);
+  @include main-content-styleds(url(../Imagens/home/03.jpg), cover);
   background-position: center;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -142,7 +141,7 @@
 }
 
 #content-third {
-  @include main-content-styleds(url(../Imagens/home/02.gif), cover, fixed);
+  @include main-content-styleds(url(../Imagens/home/02.gif), cover);
   background-position: center;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -157,7 +156,7 @@
 }
 
 #content-fourth {
-  @include main-content-styleds(url(../Imagens/home/04.jpg), cover, fixed);
+  @include main-content-styleds(url(../Imagens/home/04.jpg), cover);
   background-position: center;
   min-height: 100vh;
   background-repeat: no-repeat;
