@@ -18,6 +18,8 @@
   background-attachment: fixed;
   height: 40rem;
   background-position: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
 }
 #main-content header {
   color: #fff;
@@ -111,8 +113,8 @@
   background-attachment: fixed;
   height: 40rem;
   background-position: center;
+  min-height: 100vh;
   background-repeat: no-repeat;
-  width: auto;
 }
 #content-two #contentTwo {
   cursor: default;
@@ -133,9 +135,9 @@
   background-size: cover;
   background-attachment: fixed;
   height: 40rem;
-  background-repeat: no-repeat;
   background-position: center;
-  width: auto;
+  min-height: 100vh;
+  background-repeat: no-repeat;
 }
 #content-third #contentThird {
   cursor: default;
@@ -157,6 +159,8 @@
   background-attachment: fixed;
   height: 40rem;
   background-position: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
 }
 #content-fourth #contentFourth {
   cursor: default;
