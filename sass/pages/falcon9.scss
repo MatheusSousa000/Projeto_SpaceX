@@ -400,16 +400,17 @@ footer {
     height: 70rem;
   }
 
-  #main-content {
-    header {
-      #imgLogo {
-        height: 8rem;
-        max-width: 25rem;
-      }
-      .navBarBtn {
-        font-size: 1.5rem;
-      }
+  #main-content header {
+    #imgLogo {
+      height: 10rem;
+      max-width: 30rem;
     }
+    .navBarBtn {
+      font-size: 1.5rem;
+    }
+  }
+
+  #main-content {
     #titleOne {
       padding-top: 10rem;
       font-size: 7rem;
@@ -420,7 +421,7 @@ footer {
   }
 
   #content-two #mainTitle{
-    @include texts-styleds(0 0 0 10rem, 60rem);
+    @include texts-styleds(6rem 0 0 10rem, 60rem);
     font-size: 2.5rem;
   }
 

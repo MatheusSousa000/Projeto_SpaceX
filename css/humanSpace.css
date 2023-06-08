@@ -262,7 +262,7 @@ footer #icons .icon:hover {
   }
   #main-content header #imgLogo {
     height: 10rem;
-    max-width: 25rem;
+    max-width: 30rem;
   }
   #main-content header .navBarBtn {
     font-size: 1.5rem;
@@ -413,7 +413,7 @@ footer #icons .icon:hover {
 }
 @media screen and (max-width: 485px) {
   #main-content, #content-two, #content-third, #content-third, #content-fourth, #content-five {
-    height: 40rem;
+    height: 32rem;
   }
   #main-content header #imgLogo {
     height: 5rem;
