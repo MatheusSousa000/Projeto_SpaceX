@@ -7,7 +7,7 @@
 #main-content {
   background-image: url(../Imagens/falcon9/01.jpg);
   background-size: cover;
-  height: 100vh;
+  height: 40rem;
   background-size: 100% 100%;
 }
 #main-content #titleOne {
@@ -96,7 +96,7 @@
 #content-two {
   background-image: url(../Imagens/falcon9/02.jpg);
   background-size: cover;
-  height: 100vh;
+  height: 40rem;
   background-size: 100% 100%;
 }
 #content-two #contentTwo {
@@ -237,7 +237,7 @@
 #content-fourth {
   background-image: url(../Imagens/falcon9/08.jpg);
   background-size: cover;
-  height: 100vh;
+  height: 40rem;
   background-size: 100% 100%;
 }
 #content-fourth #content {
@@ -561,6 +561,10 @@ footer #icons .icon:hover {
   }
 }
 @media screen and (max-width: 438px) {
+  #main-content header #imgLogo {
+    height: 5rem;
+    max-width: 10rem;
+  }
   #main-content #content #titleOne {
     font-size: 3.4rem;
   }

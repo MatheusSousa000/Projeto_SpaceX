@@ -12,10 +12,12 @@
   top: 0;
 }
 
-@mixin main-content-styleds($background-image, $background-size, $min-height) {
+@mixin main-content-styleds($background-image, $background-size, $height, $background-position, $background-repeat ) {
   background-image: $background-image;
   background-size: $background-size;
-  min-height: $min-height;
+  height: $height;
+  background-position: $background-position;
+  background-repeat: $background-repeat;
 }
 
 @mixin button-styleds($transition, $border, $text-transform, $margin-top, $padding) {
@@ -34,10 +36,8 @@
 }
 
 #main-content {
-  @include main-content-styleds(url(../Imagens/home/01.jpg), cover, 100vh);
-  background-position: center;
+  @include main-content-styleds(url(../Imagens/home/01.jpg), cover, 40rem, center, no-repeat);
   background-size: 100% 100%;
-  background-repeat: no-repeat;
 
   header {
     color: #fff;
@@ -132,10 +132,8 @@
 }
 
 #content-two {
-  @include main-content-styleds(url(../Imagens/home/03.jpg), cover, 100vh);
-  background-position: center;
+  @include main-content-styleds(url(../Imagens/home/03.jpg), cover, 40rem, center, no-repeat);
   background-size: 100% 100%;
-  background-repeat: no-repeat;
 
   #contentTwo {
     @include text-styleds(default, 11rem 0 0 2rem, #fff, 35rem);
@@ -147,10 +145,8 @@
 }
 
 #content-third {
-  @include main-content-styleds(url(../Imagens/home/02.gif), cover, 100vh);
-  background-position: center;
+  @include main-content-styleds(url(../Imagens/home/02.gif), cover, 40rem, center, no-repeat);
   background-size: 100% 100%;
-  background-repeat: no-repeat;
 
   #contentThird {
     @include text-styleds(default, 11rem 0 0 2rem, #fff, 35rem);
@@ -162,10 +158,8 @@
 }
 
 #content-fourth {
-  @include main-content-styleds(url(../Imagens/home/04.jpg), cover, 100vh);
-  background-position: center;
+  @include main-content-styleds(url(../Imagens/home/04.jpg), cover, 40rem, center, no-repeat);
   background-size: 100% 100%;
-  background-repeat: no-repeat;
 
   #contentFourth {
     @include text-styleds(default, 11rem 0 0 2rem, #fff, 32rem);
@@ -244,7 +238,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 415px) {
   .img-fluid {
     width: 11rem;
   }

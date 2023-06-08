@@ -16,7 +16,7 @@
 }
 
 #main-content {
-  @include img-styleds(url(../Imagens/falcon9/01.jpg), cover, 100vh);
+  @include img-styleds(url(../Imagens/falcon9/01.jpg), cover, 40rem);
   background-size: 100% 100%;
 
   #titleOne {
@@ -114,7 +114,7 @@
 }
 
 #content-two {
-  @include img-styleds(url(../Imagens/falcon9/02.jpg), cover, 100vh);
+  @include img-styleds(url(../Imagens/falcon9/02.jpg), cover, 40rem);
   background-size: 100% 100%;
 
   #contentTwo {
@@ -270,7 +270,7 @@
 } 
 
 #content-fourth {
-  @include img-styleds(url(../Imagens/falcon9/08.jpg), cover, 100vh);
+  @include img-styleds(url(../Imagens/falcon9/08.jpg), cover, 40rem);
   background-size: 100% 100%;
 
   #content {
@@ -651,6 +651,10 @@ footer {
 }
 
 @media screen and (max-width: 438px) {
+  #main-content header #imgLogo {
+    height: 5rem;
+    max-width: 10rem;
+  }
   #main-content #content{
     #titleOne {
       font-size: 3.4rem;
